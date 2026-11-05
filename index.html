@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini-projet Web pour l'atelier Digital Skills 1.">
+  <title>Mon espace étudiant — Digital Skills 1</title>
+  <!-- Ces chemins fonctionnent tant que les trois fichiers restent ensemble. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">GLSI1 · DIGITAL SKILLS 1</p>
+    <h1>Mon espace étudiant</h1>
+    <p class="subtitle">Mon premier mini-site : apprendre, organiser et collaborer.</p>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="modules-title">
+      <h2 id="modules-title">Mes modules</h2>
+      <p class="section-intro">Voici trois matières que je découvre ce semestre.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Développement Web</h3>
+          <p>Découvrir HTML, CSS et JavaScript.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Systèmes</h3>
+          <p>Comprendre l'ordinateur et ses outils.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Git et GitHub</h3>
+          <p>Enregistrer des versions et collaborer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="exercise" aria-labelledby="exercise-title">
+      <div>
+        <p class="eyebrow">MINI-INTERACTION</p>
+        <h2 id="exercise-title">Un message à découvrir</h2>
+        <p>Testez ce bouton avant et après avoir réorganisé les fichiers.</p>
+      </div>
+      <button type="button" id="toggle-message" aria-controls="welcome-message" aria-expanded="false">
+        Afficher le message
+      </button>
+      <p id="welcome-message" class="welcome-message" hidden>
+        Bravo ! Le JavaScript est bien connecté à la page.
+      </p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    Projet pédagogique · Digital Skills 1 · FSB
+  </footer>
+</body>
+</html>
